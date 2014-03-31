@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Try 2</title>
+    <link href="Styles/StyleSheet.css" rel="stylesheet" type:"text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+  
+    <style type="text/css">
+        .auto-style1 {
+            text-decoration: underline;
+        }
+    </style>
+  
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper"> 
+        <div id="banner1">
+            
+        </div>    
+        <div id="navigation">
+            <ul id="nav">
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="#">Pipes</a>
+                    <ul>
+                        <li><a href="ImportPipes.aspx">Imports</a></li>
+                        <li><a href="#">Local</a></li>
+                        <li><a href="#">Waterpipes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Accessories</a>
+                    <ul>
+                        <li><a href="#">Grinders</a></li>
+                        <li><a href="#">Digital Scales</a></li>
+                        <li><a href="#">Trays</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Location and Hours</a></li>
+            </ul>
+
+        </div>
+        <div id ="content_area">
+            <asp:ContentPlaceHolder ID="CPHMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="sidebar">
+           <p class="auto-style1">Store Location</p>
+            <p>11505 W. Colfax</p>
+            <p>Lakewood CO.</p>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3067.965322613169!2d-105.1274595!3d39.74042980000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b84203d35b2f5%3A0xd38bc4a1a203f142!2s11505+W+Colfax+Ave!5e0!3m2!1sen!2sus!4v1395795730547"></iframe>
+            
+        </div>
+        <div id="footer">
+
+        </div>
+        
+    </div>
+    </form>
+</body>
+</html>
